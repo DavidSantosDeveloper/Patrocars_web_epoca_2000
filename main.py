@@ -34,9 +34,10 @@ async def startup():
     global bd
     bd = await asyncpg.connect(
         user='postgres',
-        password='root',
+        password='Senha4321!dfg',
         database='bd_patrocars',
-        host='localhost'
+        host='aws-0-sa-east-1.pooler.supabase.com',
+        port=6543
     )
 
 
