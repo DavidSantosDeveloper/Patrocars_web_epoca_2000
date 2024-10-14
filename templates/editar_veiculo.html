@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/estilo.css" rel="stylesheet"/>
+  <title>Editar Veículo</title>
+</head>
+<body>
+  <h1>Editar Veículo</h1>
+  <form action="/editar_salvar_veiculo/{{ veiculo['veic_id'] }}" method="POST">
+    <label for="ID do Modelo">ID do Modelo:</label>
+    <input type="text" value="{{ veiculo['mod_id'] }}" id="mod_id" name="mod_id" required><br><br>
+
+    <label for="Cor">Cor:</label>
+    <input type="text" value="{{ veiculo['cor'] }}" id="cor" name="cor" required><br><br>
+
+    <label for="Ano de Fabricação">Ano de Fabricação:</label>
+    <input type="text" value="{{ veiculo['ano_fabricacao'] }}" id="ano_fabricacao" name="ano_fabricacao" required><br><br>
+
+    <label for="Ano de Criação do Modelo">Ano de Criação do Modelo:</label>
+    <input type="text" value="{{ veiculo['ano_modelo'] }}" id="ano_modelo" name="ano_modelo" required><br><br>
+
+    <label for="Valor">Valor:</label>
+    <input type="text" value="{{ veiculo['valor'] }}" id="valor" name="valor" required><br><br>
+
+    <label for="Placa">Placa:</label>
+    <input type="text" value="{{ veiculo['placa'] }}" id="placa" name="placa" required><br><br>
+
+    <label for="Vendido">Vendido:</label>
+    <input type="text" value="{{ veiculo['vendido'] }}" id="vendido" name="vendido" required><br><br>
+
+    <button type="submit">Salvar</button>
+</form>
+</body>
+</html>

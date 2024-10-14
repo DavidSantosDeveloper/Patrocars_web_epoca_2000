@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/estilo.css" rel="stylesheet"/>
+  <title>Listagem de Modelos</title>
+</head>
+<body>
+  <h1>Listagem de Modelos</h1>
+    <ul>
+        {% for modelo in modelos %}
+            <li>{{ modelo['mod_id'] }}</li>
+            <li>{{ modelo['nome'] }}</li>
+            <li>{{ modelo['mont_id'] }}</li>
+            <li>{{ modelo['valor_referencia'] }}</li>
+            <li>{{ modelo['motorizacao'] }}</li>
+            <li>{{ modelo['turbo'] }}</li>
+            <li>{{ modelo['automatico'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

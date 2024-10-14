@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/estilo.css" rel="stylesheet"/>
+  <title>Adicionar Veículo</title>
+</head>
+<body>
+  <h1>Adicionar Veículo</h1>
+  <form action="/salvar_veiculo" method="POST">
+    <label for="ID do Modelo">ID do Modelo:</label>
+    <input type="text" id="mod_id" name="mod_id" required><br><br>
+
+    <label for="Cor">Cor:</label>
+    <input type="text" id="cor" name="cor" required><br><br>
+
+    <label for="Ano de Fabricação">Ano de Fabricação:</label>
+    <input type="text" id="ano_fabricacao" name="ano_fabricacao" required><br><br>
+
+    <label for="Ano de Criação do Modelo">Ano de Criação do Modelo:</label>
+    <input type="text" id="ano_modelo" name="ano_modelo" required><br><br>
+
+    <label for="Valor">Valor:</label>
+    <input type="text" id="valor" name="valor" required><br><br>
+
+    <label for="Placa">Placa:</label>
+    <input type="text" id="placa" name="placa" required><br><br>
+
+    <label for="Vendido">Vendido:</label>
+    <input type="text" id="vendido" name="vendido" required><br><br>
+
+    <button type="submit">Salvar</button>
+</form>
+</body>
+</html>

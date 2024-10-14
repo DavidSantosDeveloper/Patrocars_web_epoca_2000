@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/estilo.css" rel="stylesheet"/>
+  <title>Adicionar Modelo</title>
+</head>
+<body>
+  <h1>Adicionar Modelo</h1>
+    <form action="/editar_salvar_modelo/{{ modelo['mod_id'] }}" method="POST">
+        <label for="Nome">Nome:</label>
+        <input type="text" value="{{ modelo['nome'] }}" id="nome" name="nome" required><br><br>
+
+        <label for="ID da Montadora">ID da Montadora:</label>
+        <input type="text" value="{{ modelo['mont_id'] }}" id="montadora_id" name="montadora_id" required><br><br>
+
+        <label for="Valor de Referencia">Valor de Referência:</label>
+        <input type="text" value="{{ modelo['valor_referencia'] }}" id="valor_referencia" name="valor_referencia" required><br><br>
+
+        <label for="Motorizacao">Motorização:</label>
+        <input type="text" value="{{ modelo['motorizacao'] }}" id="motorizacao" name="motorizacao" required><br><br>
+
+        <label for="Turbo">Turbo:</label>
+        <input type="text" value="{{ modelo['turbo'] }}" id="turbo" name="turbo" required><br><br>
+
+        <label for="Automatico">Automático:</label>
+        <input type="text" value="{{ modelo['automatico'] }}" id="automatico" name="automatico" required><br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/estilo.css" rel="stylesheet"/>
+  <title>Editar Montadora</title>
+</head>
+<body>
+    <h1>Editar Montadora</h1>
+    <form action="/editar_salvar_montadora/{{ montadora['mont_id'] }}" method="POST">
+        
+        <label for="Nome">Nome:</label>
+        <input type="text" value="{{ montadora['nome'] }}" id="nome" name="nome" required><br><br>
+
+        <label for="País">País de Origem:</label>
+        <input type="text" value="{{ montadora['pais'] }}" id="pais" name="pais" required><br><br>
+
+        <label for="Ano">Ano de Fundação:</label>
+        <input type="text" value="{{ montadora['ano_fundacao'] }}" id="ano_fundacao" name="ano_fundacao" required><br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

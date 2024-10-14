@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/estilo.css" rel="stylesheet"/>
+  <title>Remover Montadora</title>
+</head>
+<body>
+    <h1>Remover Montadora</h1>
+    <form action="/remover_salvar_montadora/{{ montadora['mont_id'] }}" method="POST">
+        
+        <label for="Nome">Nome:</label>
+        <input type="text" value="{{ montadora['nome'] }}" id="nome" name="nome" required readonly><br><br>
+
+        <label for="País">País de Origem:</label>
+        <input type="text" value="{{ montadora['pais'] }}" id="pais" name="pais" required readonly><br><br>
+
+        <label for="Ano">Ano de Fundação:</label>
+        <input type="text" value="{{ montadora['ano_fundacao'] }}" id="ano_fundacao" name="ano_fundacao" required readonly><br><br>
+
+        <button type="submit">Remover</button>
+    </form>
+</ul>
+</body>
+</html>

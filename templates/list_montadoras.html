@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/estilo.css" rel="stylesheet"/>
+  <title>Listagem de Montadoras</title>
+</head>
+<body>
+  <h1>Listagem de Montadoras</h1>
+    <ul>
+        {% for montadora in montadoras %}
+            <li>{{ montadora['mont_id'] }}</li>
+            <li>{{ montadora['nome'] }}</li>
+            <li>{{ montadora['pais'] }}</li>
+            <li>{{ montadora['ano_fundacao'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
