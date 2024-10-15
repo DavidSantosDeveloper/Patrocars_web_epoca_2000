@@ -33,11 +33,11 @@ async def read_root():
 async def startup():
     global bd
     bd = await asyncpg.connect(
-        user='postgres.fhcqnbvvxxkgndcpqhrn',
-        password='Senha4321!dfg',
+        user='bd_patrocars_owner',
+        password='vDjE1ZTotUy8',
         database='bd_patrocars',
-        host='aws-0-sa-east-1.pooler.supabase.com',
-        port=6543
+        host='ep-falling-darkness-a5s3904y.us-east-2.aws.neon.tech',
+        port=5432
     )
 
 
