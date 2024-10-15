@@ -307,5 +307,6 @@ async def remover_veiculo(veic_id: int):
     await bd.execute(delecao, veic_id)
 
 
+
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=10000)
